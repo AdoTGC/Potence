@@ -40,6 +40,7 @@ while kumulativnaVsota < 1000:
         #Še enkrat uporabniku ponudimo, da vpiše števili
         stevilo1 = int(input("Vnesite število med 2 in 8:"))
         stevilo2 = int(input("Vnesite 2. število med 2 in 8:"))
+        
     #Dodamo 1 k številu pravilnih parov, saj vemo, da se ta ukaz ne bo izvedel dokler par ne bo pravilen
     stPravilnihParov = stPravilnihParov + 1
 
@@ -58,6 +59,7 @@ while kumulativnaVsota < 1000:
     kumulativnaVsota = kumulativnaVsota + vrednostPotence
     #Izpišemo vrednost potence
     print("Potenca z osnovo " + str(osnova) + " in eksponentom " + str(eksponent) + " znaša " + str(vrednostPotence))
+    
 #Ta dva ukaza spodaj se ne bosta zagnala dokler kumulativna vsota ne bo večja kot 1000
 #Izpišemo koliko pravilnih in nepravilnih parov števil je uporabnik vnesel
 print("Podali ste " + str(stPravilnihParov) + " pravilenih parov števil, katerih skupna vsota potenc znaša " + str(kumulativnaVsota))
